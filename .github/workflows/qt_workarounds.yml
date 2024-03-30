@@ -1,4 +1,4 @@
-name: PikaOS Package Release
+name: QT workaround package
 
 on:
   workflow_dispatch
@@ -34,10 +34,7 @@ jobs:
       run: apt-get update -y
     
     - name: Build Package
-      run: ./main.sh
-
-    - name: Release Package
-      run: ./release.sh
+      run: ./qt_workarounds.sh
 
     - name: Purge cache
       uses: strrife/cloudflare-chunked-purge-action@master
