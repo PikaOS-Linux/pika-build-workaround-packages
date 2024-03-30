@@ -14,6 +14,8 @@ EOF
 
 dpkg-deb --build pika-builder-qt-workaround
 
+dpkg-name pika-builder-qt-workaround.deb
+
 # Move all debs to output
 
 mkdir -p ./output

@@ -14,6 +14,8 @@ EOF
 
 dpkg-deb --build pika-builder-python3-workaround
 
+dpkg-name pika-builder-python3-workaround.deb
+
 # Move all debs to output
 
 mkdir -p ./output
